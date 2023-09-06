@@ -38,7 +38,10 @@ dropdown.addEventListener("click", function () {
     } else {
         dropdownContent.style.display = "block";
     }
+    event.stopPropagation();
 });
+
+
 
 // Cerrar el menú desplegable si el usuario hace clic fuera de él
 window.addEventListener("click", function (event) {
