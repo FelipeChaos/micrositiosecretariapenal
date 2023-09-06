@@ -1,16 +1,16 @@
-const username = "usuario@prueba.com";
-const password = "contraseña";
+// const username = "usuario@prueba.com";
+// const password = "contraseña";
 
-function authenticate() {
-    const enteredUsername = prompt("Ingrese su nombre de usuario:");
-    const enteredPassword = prompt("Ingrese su contraseña:");
+// function authenticate() {
+//     const enteredUsername = prompt("Ingrese su nombre de usuario:");
+//     const enteredPassword = prompt("Ingrese su contraseña:");
   
-    if (enteredUsername === username && enteredPassword === password) {
-      alert("Autenticación exitosa. Puede acceder a la página restringida.");
-    } else {
-      alert("Credenciales incorrectas. Inténtelo de nuevo.");
-    }
-}
+//     if (enteredUsername === username && enteredPassword === password) {
+//       alert("Autenticación exitosa. Puede acceder a la página restringida.");
+//     } else {
+//       alert("Credenciales incorrectas. Inténtelo de nuevo.");
+//     }
+// }
 
 // Obtener referencias a los elementos HTML
 var dropdown = document.querySelector(".dropdown");
