@@ -1,3 +1,17 @@
+const username = "";
+const password = "";
+
+function authenticate() {
+    const enteredUsername = prompt("Ingrese su nombre de usuario:");
+    const enteredPassword = prompt("Ingrese su contraseña:");
+  
+    if (enteredUsername === username && enteredPassword === password) {
+      alert("Autenticación exitosa. Puede acceder a la página restringida.");
+    } else {
+      alert("Credenciales incorrectas. Inténtelo de nuevo.");
+    }
+}
+
 // Obtener referencias a los elementos HTML
 var dropdown = document.querySelector(".dropdown");
 var regresarInicioButton = document.querySelector(".regresar-inicio");
