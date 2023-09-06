@@ -1,4 +1,4 @@
-const username = "usuario";
+const username = "usuario@prueba.com";
 const password = "contraseña";
 
 function authenticate() {
