@@ -1,5 +1,5 @@
-const username = "";
-const password = "";
+const username = "usuario";
+const password = "contraseña";
 
 function authenticate() {
     const enteredUsername = prompt("Ingrese su nombre de usuario:");
