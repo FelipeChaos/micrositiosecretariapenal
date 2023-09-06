@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+body {
+    background-image: url('Logo Remove BG.png');
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 6px 5px 10px darkgoldenrod;
+    border-color: #3498db;
+    border-radius: 100px;
+    border-style: solid;
+    text-align: left;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+/* Estilo para el enlace de los formularios */
+.form-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.form-link:hover {
+    color: goldenrod;
+}
+
+/* Estilo para el botón "Regresar al Inicio" */
+.regresar-inicio {
+    background-color: #3498db;
+    padding: 15px 20px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    margin-top: 20px;
+}
+
+/* Estilo al pasar el mouse sobre "Regresar al Inicio" */
+.regresar-inicio:hover {
+    background-color: darkgoldenrod;
+}

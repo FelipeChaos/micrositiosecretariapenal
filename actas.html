@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <div id="actaDetails" class="acta-details" style="display: none;">
+            <!-- Aquí se mostrarán los detalles del acta seleccionada -->
+        </div>
+
+        <!-- Menú desplegable para escoger actas -->
+        <div class="dropdown">
+            <button class="dropbtn escoger-acta">Escoger Acta</button>
+            <div class="dropdown-content" id="actasDropdown" multiple>
+                <!-- Opciones de actas -->
+                <a href="#">Acta 1</a>
+                <a href="#">Acta 2</a>
+                <a href="#">Acta 3</a>
+                <!-- Agregar más opciones de actas aquí -->
+            </div>
+        </div>
+
+        <!-- Botones -->
+        
+        <button class="generar-acta escoger-acta" onclick="mostrarGrid()">Generar Acta</button>
+        <button class="regresar-inicio escoger-acta" onclick="window.location.href = 'index.html'">Regresar</button>
+        
+        <!-- Botón para descargar el PDF generado -->
+        <a href="#" id="descargarPDF" class="descargar-pdf escoger-acta" style="display: none;">Descargar PDF</a>
+
+        <!-- Grid de ejemplo -->
+        <div id="grid" class="grid" style="display: none;">
+            <!-- Contenido de ejemplo -->
+            <div class="div1"> 
+                <img class="img" src="Logo Remove BG.png" alt="Logo"> 
+            </div>
+            <div class="div2">Lorem Ipsum</div>
+            <div class="div3">Lorem Ipsum</div>
+            <div class="div4">Lorem Ipsum</div>
+            <div class="div5">Lorem Ipsum</div>
+            <div class="div6">Lorem Ipsum</div>
+            <div class="div7">Lorem Ipsum</div>
+            <div class="div8">Lorem Ipsum</div>
+            <div class="div9">Lorem Ipsum</div>
+            <div class="div10">Lorem Ipsum</div>
+            <div class="div11">Acta N</div>
+            <div class="div12" id="fechaValue">Fecha</div>
+            <div class="div13">Proyectos presentados y aprobados</div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

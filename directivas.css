@@ -1,0 +1,109 @@
+/* Estilos generales */
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-transform: capitalize;
+    
+}
+
+body {
+    background-image: url(LogoSalaPenal.PNG);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+/* Estilo para el contenedor principal */
+.center-content {
+    background-color: #3498db; /* Color de fondo azul */
+    padding: 10px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    max-width: 800px; /* Limitar el ancho del contenido para una mejor legibilidad */
+    margin: 20px auto; /* Centrar el contenido horizontalmente */
+}
+
+/* Estilo para los encabezados */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para los botones */
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #3498DB; /* Color de fondo azul */
+    padding: 15px 20px;
+    border: none;
+    color: #fff; /* Color de texto blanco */
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Espacio entre botones */
+}
+
+.button:hover {
+    background-color: #f5a623; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilo para el botón "Cargar Directiva" */
+.cargar-directiva {
+    background-color: #3498DB; /* Color de fondo azul */
+    padding: 15px 20px;
+    border: none;
+    color: #fff; /* Color de texto blanco */
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Espacio entre botones */
+}
+.cargar-directiva:hover {
+    background-color: #f5a623; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilo para la lista de directivas */
+.directivas-list {
+    background-color: #3498db; /* Color de fondo azul */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.directivas-list p {
+    color: #fff; /* Color de texto blanco */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.directivas-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.directivas-list li {
+    margin-bottom: 10px;
+}
+
+.directivas-list a {
+    text-decoration: none;
+    color: #fff; /* Color de texto blanco */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.directivas-list a:hover {
+    color: #f5a623; /* Cambia el color al pasar el mouse */
+}

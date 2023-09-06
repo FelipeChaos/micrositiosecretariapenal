@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro Macro</title>
+    <link rel="stylesheet" href="cuadromacro.css">
+</head>
+<body>
+    <header>
+        <h1>Cuadro Macro</h1>
+    </header>
+    
+    <!-- Contenedor principal para el cuadro macro -->
+    <div class="center-content">
+        
+        <table class="table">
+            <!-- Encabezado de la tabla -->
+            <thead>
+                <tr>
+                    <th>Fecha Registro</th>
+                    <th>Radicado CUI</th>
+                    <th>Número Interno</th>
+                    <th>Clase Proceso</th>
+                    <th>Magistrado</th>
+                    <th>Fecha Alerta</th>
+                    <th>Anotación</th>
+                    <th>Estado</th>
+                    <th>Usuario Envia</th>
+                    <th>Usuario Recibe</th>
+                    <th>Trámite</th>
+                </tr>
+            </thead>
+            <!-- Contenido de la tabla -->
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td contenteditable="true" class="anotacion"> </td>
+                </tr>
+                <!-- Puedes agregar más filas de datos similares según sea necesario -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Botón para regresar al menú principal -->
+    <div class="buttons">
+        <button class="descargar-pdf">Descargar PDF</button>
+        <button class="regresar-inicio" onclick="window.location.href = 'index.html'">Regresar</button>
+    </div>
+</body>
+</html>
