@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-menu">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="mostrarOpciones()">Selecciona una opción</button>
+            <div class="dropdown-content" id="dropdownOptions">
+                    <a href="actas.html">Actas</a>
+                    <a href="cuadro-macro.html">Cuadro Macro</a>
+                    <a href="directivas.html">Directivas</a>
+                    <a href="templates.html">Extraer datos</a>
+                    <a href="formularios.html">Formularios</a>
+                    <a href="providencias.html">Providencias</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contenido principal en el centro -->
+        <div class="center-content">
+            <!-- Encabezado -->
+            <header>
+                <h1>Bienvenido</h1>
+            </header>
+            
+            <!-- Información principal -->
+            <article>
+                <h3>Acá encontrarás</h3>
+                <ul>
+                    <li>La forma más rápida para descargar las actas.</li>
+                    <li>Extracción de datos para el archivo de providencias.</li>
+                    <li>Directivas de la secretaría.</li>
+                    <li>La información correspondiente al cuadro macro (colores).</li>
+                    <li>Los enlaces de acceso a los formularios creados para la secretaría.</li>
+                    <li>El nuevo cuadro de providencias.</li>
+
+                </ul>
+            </article>
+            
+            <!-- Botón para regresar al inicio -->
+            <button class="salirButton" onclick="window.location.href = 'index.html'">Salir</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

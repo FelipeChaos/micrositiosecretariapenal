@@ -3,48 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú</title>
+    <title>Inicio Sesion</title>
     <link rel="stylesheet" href="index.css">
+    <meta name="description" content="Página para ver actas y otros documentos de forma más fácil">
+    
 </head>
 <body>
-    <!-- Contenedor principal -->
+    
     <div class="container">
-        <!-- Menú desplegable a la izquierda -->
-        <div class="left-menu">
-            <div class="dropdown">
-                <button class="dropbtn">Selecciona una opción</button>
-                <div class="dropdown-content">
-                    <a href="actas.html">Actas</a>
-                    <a href="cuadro-macro.html">Cuadro Macro</a>
-                    <a href="formularios.html">Formularios</a>
-                    <a href="directivas.html">Directivas</a>
-                </div>
-            </div>
+        <div class="info">
+            <p class="txt-1">Bienvenido</p>
+            <h3>Aquí encontraras información importante de la secretaria</h3>
+            <hr/>
         </div>
-        
-        <!-- Contenido principal en el centro -->
-        <div class="center-content">
-            <!-- Encabezado -->
-            <header>
-                <h1>Bienvenido</h1>
-            </header>
-            
-            <!-- Información principal -->
-            <article>
-                <h3>Acá encontrarás</h3>
-                <ul>
-                    <li>La forma más rápida para descargar las actas</li>
-                    <li>Todas las directivas de la secretaría</li>
-                    <li>La información correspondiente al cuadro macro (colores)</li>
-                    <li>Los enlaces de acceso a los formularios creados para la secretaría</li>
-                </ul>
-            </article>
-            
-            <!-- Botón para regresar al inicio -->
-            <button class="salirButton" onclick="window.location.href = 'login.html'">Salir</button>
-        </div>
-    </div>
 
-    <script src="script.js"></script>
+        <form class="form" id="loginform" action="menu.html" method="get">
+        
+            <h2>Inicio Sesion</h2>
+
+            <p>
+                Inicia Sesion con tu correo institucional y clave del correo institucional
+            </p>
+            <div class="inputs">
+
+                <input type="email" class="box" placeholder="Ingresa el correo">
+                <input type="password" class="box" placeholder="Ingresa Contraseña">
+
+                <a href="#">Olvide mi contraseña</a>
+                <input type="submit" value="Iniciar Sesion" class="submit">
+            </div>
+        </form>
 </body>
 </html>

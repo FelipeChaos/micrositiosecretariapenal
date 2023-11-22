@@ -32,7 +32,7 @@
                 </tr>
             </thead>
             <!-- Contenido de la tabla -->
-            <tbody>
+            <tbody id="tabla-body">
                 <tr>
                     <td></td>
                     <td></td>
@@ -46,15 +46,15 @@
                     <td></td>
                     <td contenteditable="true" class="anotacion"> </td>
                 </tr>
-                <!-- Puedes agregar más filas de datos similares según sea necesario -->
             </tbody>
         </table>
+        <button onclick="agregarFila()">Agregar Fila</button>
     </div>
 
     <!-- Botón para regresar al menú principal -->
     <div class="buttons">
         <button class="descargar-pdf">Descargar PDF</button>
-        <button class="regresar-inicio" onclick="window.location.href = 'index.html'">Regresar</button>
+        <button class="regresar-inicio" onclick="window.location.href = 'menu.html'">Regresar</button>
     </div>
 </body>
 </html>

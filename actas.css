@@ -1,0 +1,132 @@
+/* Estilos generales */
+body { 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 120%;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para todos los botones */
+.escoger-acta, .generar-acta, .regresar-inicio, .descargar-pdf {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 0.5px solid black;
+    width: 75%; /* debe mantenerse de este tamaño */
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.escoger-acta:hover, .generar-acta:hover, .regresar-inicio:hover, .descargar-pdf:hover {
+    background-color: goldenrod;
+}
+
+/* Estilo del dropdown */
+.dropdown {
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    float: none;
+    color: #075c99;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+/* Estilo del botón del dropdown */
+.dropbtn {
+    background-color: #0D89EC;
+    color: azure;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+/* Icono de flecha hacia abajo */
+.dropbtn::after {
+    content: "\25BC";
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+/* Estilo al pasar el mouse sobre el botón */
+.dropbtn:hover {
+    background-color: #075c99;
+}
+
+/* Estilo del contenido del dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Estilo de las opciones del dropdown */
+.dropdown-content a {
+    color: #075c99;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+/* Estilo al pasar el mouse sobre las opciones */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #075c99;
+}
+
+/* Estilo para el espacio de firmas y participantes */
+.firmas-participantes {
+    grid-area: 6 / 1 / 7 / 8;
+    margin: 20px;
+    text-align: left;
+}
+
+.firmas-participantes h3 {
+    margin: 0;
+}
+
+.firmas-participantes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.firmas-participantes li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para el grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.grid div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para el botón de descarga de PDF */
+.descargar-pdf {
+    display: none;
+}

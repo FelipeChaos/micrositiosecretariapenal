@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="actas.css">
 </head>
 <body>
     <div class="parent">
@@ -17,18 +17,17 @@
             <button class="dropbtn escoger-acta">Escoger Acta</button>
             <div class="dropdown-content" id="actasDropdown" multiple>
                 <!-- Opciones de actas -->
-                <a href="#">Acta 1</a>
-                <a href="#">Acta 2</a>
-                <a href="#">Acta 3</a>
+                <a href="Acta1">Acta 1</a>
+                <a href="Acta2">Acta 2</a>
+                <a href="Acta3">Acta 3</a>
                 <!-- Agregar más opciones de actas aquí -->
             </div>
         </div>
 
         <!-- Botones -->
-        
         <button class="generar-acta escoger-acta" onclick="mostrarGrid()">Generar Acta</button>
-        <button class="regresar-inicio escoger-acta" onclick="window.location.href = 'index.html'">Regresar</button>
-        
+        <button class="regresar-inicio escoger-acta" onclick="window.location.href = 'menu.html'">Regresar</button>
+
         <!-- Botón para descargar el PDF generado -->
         <a href="#" id="descargarPDF" class="descargar-pdf escoger-acta" style="display: none;">Descargar PDF</a>
 
@@ -53,6 +52,7 @@
         </div>
 
         <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
     </div>
 </body>
 </html>

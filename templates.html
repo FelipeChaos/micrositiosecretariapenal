@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="templates.css">
+    <title>Extracción datos para Providencias</title>
+</head>
+<body>
+    <h1>Extracción de Datos PDF</h1>
+
+    <h3>En esta página podrás hacer la extracción de la información del contenido de los archivos PDF que subas.</h3>
+
+    <div>
+        <h2>Paso 1:</h2>
+        <form id="pdfForm" enctype="multipart/form-data">
+            <input type="file" name="pdf_folder" id="pdfInput" webkitdirectory directory multiple>
+        </form>
+        <button type="button" id="extractButton">Extraer Datos</button>
+        <button id="downloadExcel" style="display: none;">Descargar Excel</button>
+    </div>
+
+    <div id="notification"></div>
+    <div id="result" style="display: none;">
+        <h2>Datos Extraídos</h2>
+        <table id="extractedData" class="table">
+            <thead>
+                <tr>
+                    <th>CARPETA DE ORIGEN</th>
+                    <th>NOMBRE DEL PDF</th>
+                    <th>FOLIOS</th>
+                    <th>Salva Parcialmente el Voto</th>
+                    <th>Salva el Voto</th>
+                    <th>Aclara el Voto</th>
+                    <th>Aclara Parcialmente el Voto</th>
+                    <th>ACLARACIÓN DE VOTO</th>
+                    <th>Salvamento de voto</th>
+                    <th>Salvamento Parcial de Voto</th>
+                    <th>DELITO</th>
+                    <th>PUNIBLE</th>
+                    <th>906</th>
+                    <th>600</th>
+                    <th>1095</th>
+                    <th>1407</th>
+                    <th>RESUELVE</th>
+                    <th>PROCESADO</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Datos extraídos se insertarán aquí dinámicamente usando JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    
+    <button class="regresar-inicio button" onclick="window.location.href = 'menu.html'">Regresar</button>
+    <script src="templates.js"></script>
+</body>
+</html>

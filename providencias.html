@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Providencias</title>
+    <link rel="stylesheet" href="providencias.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.SPServices/2014.02/jquery.SPServices.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <!-- Menú desplegable a la izquierda -->
+    <div class="left-menu">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="mostrarOpciones()">Tipo de providencia</button>
+            <div class="dropdown-content" id="dropdownOptions">
+                <a href="#" onclick="cambiarTipoCaso('Ordinarios')">Ordinarios</a>
+                <a href="#" onclick="cambiarTipoCaso('Tutelas')">Tutelas</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <h1>PROVIDENCIAS</h1>
+</header>
+
+<table class="table" id="tabla-ordinarios" style="display: none;">
+    <!-- Encabezado de la tabla -->
+    <thead>
+    <tr>
+        <th>FECHA LABOR</th>
+        <th>FECHA DESCARGADO</th>
+        <th>PONENTE</th>
+        <th>N° PROVIDENCIA (Sentencia o Auto)</th>
+        <th>RADICADO INTERNO</th>
+        <th>ACTA</th>
+        <th>FECHA</th>
+        <th>ASUNTO</th>
+        <th>DECISION</th>
+        <th>FOLIOS</th>
+        <th>PAÍS SOLICITANTE</th>
+        <th>IMPEDIMENTOS</th>
+        <th>SITUACIONES ADMINISTRATIVAS</th>
+        <th>SALVAMENTOS</th>
+    </tr>
+    </thead>
+    <!-- Contenido de la tabla -->
+    <tbody>
+    <tr>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table" id="tabla-tutelas" style="display: none;">
+    <!-- Encabezado de la tabla para Tutelas -->
+    <thead>
+    <tr>
+        <th>FECHA LABOR</th>
+        <th>FECHA DESCARGADO</th>
+        <th>PONENTE</th>
+        <th>N° PROVIDENCIA (Sentencia o Auto)</th>
+        <th>RADICADO INTERNO</th>
+        <th>ACTA</th>
+        <th>FECHA</th>
+        <th>ASUNTO</th>
+        <th>DECISION</th>
+        <th>FOLIOS</th>
+        <th>IMPEDIMENTOS</th>
+        <th>SITUACIONES ADMINISTRATIVAS</th>
+        <th>SALVAMENTOS</th>
+    </tr>
+    </thead>
+    <!-- Contenido de la tabla para Tutelas -->
+    <tbody>
+    <tr>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+        <td contenteditable="true" class="anotacion"></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<div><td><button onclick="agregarFila(this)">Agregar Fila</button></td>
+</div> <br>
+<div class="buttons">
+    <button class="descargar-pdf" id="descargarPDF">Descargar PDF</button>
+    <button class="regresar-inicio" onclick="window.location.href = 'menu.html'">Regresar</button>
+    <button class="guardar" onclick="guardarDatos()">Guardar</button>   
+</div>
+
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jQuery/dist/jquery.SPServices.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

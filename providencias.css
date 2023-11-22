@@ -1,0 +1,156 @@
+/* Estilo para el contenedor principal */
+.center-content {
+    background-color: #3498db; /* Color de fondo azul */
+    padding: 10px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    max-width: 8000px; /* Limitar el ancho del contenido para una mejor legibilidad */
+    margin: 20px auto; /* Centrar el contenido horizontalmente */
+}
+
+header { 
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    background-color: transparent;
+    background-image: url(Logo\ Remove\ BG.png);
+    background-size: 130px;
+    background-position: 900px;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+/* Estilo para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* Color de fondo blanco */
+    border-radius: 5px;
+    border-color: #000;
+}
+
+/* Estilo para las celdas de encabezado */
+.table th {
+    background-color: darkgoldenrod; /* Color de fondo dorado oscuro */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+}
+
+/* Estilo para las celdas de datos */
+.table td {
+    background-color: #fff; /* Color de fondo blanco */
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc; /* Borde inferior delgado para separar las filas */
+    border: 1px solid;
+}
+
+/* Estilo para la celda de anotación editable */
+.anotacion {
+    background-color: #f2f2f2;
+    padding: 5px;
+    min-height: 50px;
+    border: 1px solid #ccc;
+    cursor: text;
+    overflow: auto;
+    color: #000; /* Color de texto negro */
+}
+
+/* Estilo para los botones */
+.buttons {
+    justify-content:flex-end; 
+    align-items: center;
+    margin-bottom: 20px; /* Agrega espacio entre los botones y la tabla */
+}
+
+/* Estilo para el botón "Descargar PDF" */
+.descargar-pdf,.guardar {
+    background-color: #3498DB; /* Color de fondo dorado oscuro */
+    padding: 15px 20px;
+    border: none;
+    color: #fff; /* Color de texto blanco */
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo al pasar el mouse sobre "Descargar PDF" */
+.descargar-pdf:hover {
+    background-color: #f5a623; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilo al pasar el mouse sobre "Guardar" */
+.guardar:hover {
+    background-color: #f5a623; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilo para el botón "Regresar" */
+.regresar-inicio {
+    background-color: #3498DB; /* Color de fondo dorado oscuro */
+    padding: 15px 20px;
+    border: none;
+    color: #fff; /* Color de texto blanco */
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo al pasar el mouse sobre "Regresar" */
+.regresar-inicio:hover {
+    background-color: #f5a623; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.tipo-caso {
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dropdown-content a {
+    color: #3498db;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+    white-space: nowrap; /* Cambio: Evitar saltos de línea */
+}
+
+/* Estilo al pasar el mouse sobre las opciones */
+.dropdown-content a:hover {
+    background-color: goldenrod;
+    color: #2980b9;
+}
+/* Icono de flecha hacia abajo */
+.dropbtn::after {
+    content: "\25BC";
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+/* Estilo al pasar el mouse sobre el botón */
+.dropbtn:hover {
+    background-color: #2980b9;
+}
+/* Estilo del menú desplegable a la izquierda */
+.left-menu {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/* Estilo del botón del dropdown */
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
